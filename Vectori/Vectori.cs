@@ -243,6 +243,10 @@ namespace Vectori
             return nou;
         }
         
+        public static void bublbeSort2(int[] nrDeOrdonat)
+        {
+
+        }
         
 
         }
