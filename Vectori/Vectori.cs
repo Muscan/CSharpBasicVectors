@@ -245,7 +245,7 @@ namespace Vectori
         
         public static void bublbeSort2(int[] nrDeOrdonat)
         {
-
+         
         }
         
 
