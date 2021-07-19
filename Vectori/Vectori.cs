@@ -36,44 +36,44 @@ namespace Vectori
 
             }
         }
-               /*
-   parcurgere sortare
-   int [] sortare={55,99,22,11,4,5}; int [31, 30, 29, 28, 27, 2]
-   i<v.length-1    |     j<v.length    |    if (v[i] > v[j]) | 0  | 1 | 2  | 3  |  4  |  5  | j  |  i  |
+        /*
+parcurgere sortare
+int [] sortare={55,99,22,11,4,5}; int [31, 30, 29, 28, 27, 2]
+i<v.length-1    |     j<v.length    |    if (v[i] > v[j]) | 0  | 1 | 2  | 3  |  4  |  5  | j  |  i  |
 
-   true(i=0)             true(j=1)            55>99 false    |    |   |    |                    2
-                         true(j=2)            55>22  ade     |  22|   |  55|                    3
-                         true(j=3)            22>11  a       |  11|   |    |  22                4
-                         true(j=4)            11>4    a      |  4 |   |    |          11        5
-                         true(j=5)            4>5f                  5                           6
-                         false
-     i<v.length-1    |     j<v.length    |    if (v[i] > v[j])|  aux |  0  | 1 | 2  | 3  |  4  |  5  | j  |  i  |
-                                                                        31  30   29   28   27     2
-     i=0<5 T              j=1,1<6T            31>30T              31    30  31                         1      0
-     i=0<5 T              j=2,2<6T            30>29T              30    29       30                    2      0
-     i=0<5 T              j=3,3<6T            29>28T              29    28            29               3      0
-     i=0<5 T              j=4,4<6T            28>27T              28    27                  28         4      0
-     i=0<5 T              j=5,5<6T            27>2 T              27    2                        27    5      0
-     i=0<5 T              j=6,6<6F            -
+true(i=0)             true(j=1)            55>99 false    |    |   |    |                    2
+                  true(j=2)            55>22  ade     |  22|   |  55|                    3
+                  true(j=3)            22>11  a       |  11|   |    |  22                4
+                  true(j=4)            11>4    a      |  4 |   |    |          11        5
+                  true(j=5)            4>5f                  5                           6
+                  false
+i<v.length-1    |     j<v.length    |    if (v[i] > v[j])|  aux |  0  | 1 | 2  | 3  |  4  |  5  | j  |  i  |
+                                                                 31  30   29   28   27     2
+i=0<5 T              j=1,1<6T            31>30T              31    30  31                         1      0
+i=0<5 T              j=2,2<6T            30>29T              30    29       30                    2      0
+i=0<5 T              j=3,3<6T            29>28T              29    28            29               3      0
+i=0<5 T              j=4,4<6T            28>27T              28    27                  28         4      0
+i=0<5 T              j=5,5<6T            27>2 T              27    2                        27    5      0
+i=0<5 T              j=6,6<6F            -
 
-     i=1<5 T              j=2,2<6T            31>30T              31         30   31                   2      1
-     i=1<5 T              j=3,3<6T            30>29T              30         29        30              3      1
-                          j=4,4<6T            29>28T              29         28              29        4      1
-                          j=5,5<6T            28>27T              28         27                   28   5      1
-                          j=6 -
-     i=2<5T               j=3,3<6T            31>30T              31              30   31              3      2
-                          j=4,4<6T            30>29T              30              29         30        4      2
-                          j=5,5<6T            29>28T              29              28              29   5      2
-                          j=6 -
-     i=3<5T               j=4,4<6T            31>30               31                   30    31        4      3
-                          j=5,5<6T            30>29T              30                   29         30   5      3
-                          j=6 -
-     i=4<5T               j=5,5<6T            31>30T              31                         30   31   5      4
-     i=5<5F
-                                                                         2   27   28   29    30    31
+i=1<5 T              j=2,2<6T            31>30T              31         30   31                   2      1
+i=1<5 T              j=3,3<6T            30>29T              30         29        30              3      1
+                   j=4,4<6T            29>28T              29         28              29        4      1
+                   j=5,5<6T            28>27T              28         27                   28   5      1
+                   j=6 -
+i=2<5T               j=3,3<6T            31>30T              31              30   31              3      2
+                   j=4,4<6T            30>29T              30              29         30        4      2
+                   j=5,5<6T            29>28T              29              28              29   5      2
+                   j=6 -
+i=3<5T               j=4,4<6T            31>30               31                   30    31        4      3
+                   j=5,5<6T            30>29T              30                   29         30   5      3
+                   j=6 -
+i=4<5T               j=5,5<6T            31>30T              31                         30   31   5      4
+i=5<5F
+                                                                  2   27   28   29    30    31
 
 
-   */
+*/
 
         public static void bubbleSort(int[] v)
         {
@@ -83,7 +83,7 @@ namespace Vectori
 
                 check = 1;
 
-                for(int i=0; i<v.Length-1; i++)
+                for (int i = 0; i < v.Length - 1; i++)
                 {
                     if (v[i] > v[i + 1])
                     {
@@ -95,7 +95,7 @@ namespace Vectori
                     }
 
                 }
-                
+
             } while (check == 0);
 
         }
@@ -171,7 +171,7 @@ namespace Vectori
         *
         * */
 
-        public static bool binarySearch(int[] v , int key)
+        public static bool binarySearch(int[] v, int key)
         {
 
             sortareSelectie(v);
@@ -188,7 +188,7 @@ namespace Vectori
                 }
                 else if (v[auxiliar] < key)
                 {
-                    primaValoare = auxiliar +1;
+                    primaValoare = auxiliar + 1;
                 }
                 else
                 {
@@ -205,7 +205,7 @@ namespace Vectori
         }
         public static int[] stergere(int[] v, int pozitia)
         {
-            for(int i = 0; i<v.Length-1; i++)
+            for (int i = 0; i < v.Length - 1; i++)
             {
                 v[i] = v[i + 1];
             }
@@ -214,7 +214,7 @@ namespace Vectori
             int[] nou = new int[v.Length - 1];
 
 
-            for(int i = 0; i < nou.Length; i++)
+            for (int i = 0; i < nou.Length; i++)
             {
                 nou[i] = v[i];
             }
@@ -223,18 +223,18 @@ namespace Vectori
             return nou;
 
 
-           
+
         }
         public static int[] inserare(int[] v, int pozitia, int nr)
         {
             int[] nou = new int[v.Length + 1];
-            for (int i=0; i<v.Length; i++)
-          
+            for (int i = 0; i < v.Length; i++)
+
             {
                 nou[i] = v[i];
 
             }
-            for (int i = v.Length-1; i >=pozitia; i--)
+            for (int i = v.Length - 1; i >= pozitia; i--)
             {
                 nou[i + 1] = nou[i];
 
@@ -242,12 +242,28 @@ namespace Vectori
             nou[pozitia] = nr;
             return nou;
         }
-        
-        public static void bublbeSort2(int[] nrDeOrdonat)
-        {
-         
-        }
-        
 
-        }
-    }   
+        public static void bubbleSort2(int[] nrDeOrdonat)
+        {
+            //ia cate doua elemente consecutive si le compara. 
+            //Daca nu sunt oronate, le interschimba
+            //Face operatiile acestea cat timp sirul nu e ordonat
+            int numereNeordonate = 0;
+            do
+            {
+                numereNeordonate = 0;
+                for (int i = 0; i < nrDeOrdonat.Length - 1; i++)
+                {
+                    if (nrDeOrdonat[i] > nrDeOrdonat[i + 1])
+                    {//[99, 55]
+                        int nrSchimbat = nrDeOrdonat[i];//99
+                        nrDeOrdonat[i]= nrDeOrdonat[i + 1];// 99 devine 55
+                        nrDeOrdonat[i + 1]= nrSchimbat;//55 ia valoarea 99 
+                        numereNeordonate = 1;//
+                    }
+                }
+            } while (numereNeordonate == 1);
+            afisare(nrDeOrdonat);
+            }
+    }
+}
