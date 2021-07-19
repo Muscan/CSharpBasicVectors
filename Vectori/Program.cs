@@ -8,7 +8,7 @@ namespace Vectori
     {
         static void Main(string[] args)
         {
-            int[] v = { 33, 32, 55, 756, 87878, 2 };
+            int[] v = { 33, 32, 55, 756, 87878, 9 };
 
 
             afisare(v);
