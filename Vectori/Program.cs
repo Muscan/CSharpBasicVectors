@@ -18,8 +18,8 @@ namespace Vectori
             //afisare(v);
             //bubbleSort2(v);
             //Console.WriteLine(binarySearch2(v,55));
-            int[] vectorX = { 0, 1, 2, 32, 44, 1000, 1001 };
-            int[] vectorY = { 1, 0, -2, 32, 44, 875, 1000 };
+            int[] vectorX = { 1,2,3 };
+            int[] vectorY = { 1,2,3,4,9};
             binarySearch508(vectorX, vectorY);
 
 

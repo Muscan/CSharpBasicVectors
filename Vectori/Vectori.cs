@@ -272,7 +272,7 @@ i=5<5F
             sortareSelectie(numerele);
 
             int indexStanga = 0;
-            int indexDreapta = numerele.Length;
+            int indexDreapta = numerele.Length-1;
 
             while (indexStanga <= indexDreapta)
             {
@@ -292,17 +292,18 @@ i=5<5F
             }
             return false;
         }
-        
-        public static void binarySearch508(int[] vectorX, int [] vectorY)
+
+    
+         public static void binarySearch508(int[] vectorX, int[] vectorY)
         {
-            for(int i = 0; i<vectorY.Length; i++)
-            if(binarySearch2(vectorX, vectorY[i]) == true)
+            for (int i = 0; i < vectorY.Length; i++)
+                if (binarySearch2(vectorX, vectorY[i]) == true)
                 {
-                    Console.Write("1 ");
+                    Console.Write(1 + " ");
                 }
                 else
                 {
-                    Console.Write("0 ");
+                    Console.Write(0 + " ");
                 }
         }
     }
