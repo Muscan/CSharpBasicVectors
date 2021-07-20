@@ -16,8 +16,11 @@ namespace Vectori
             //stergere(v, 0);
             //v = inserare(v,6 , 10);
             //afisare(v);
-            bubbleSort2(v);
-
+            //bubbleSort2(v);
+            //Console.WriteLine(binarySearch2(v,55));
+            int[] vectorX = { 0, 1, 2, 32, 44, 1000, 1001 };
+            int[] vectorY = { 1, 0, -2, 32, 44, 875, 1000 };
+            binarySearch508(vectorX, vectorY);
 
 
 

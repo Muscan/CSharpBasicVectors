@@ -259,7 +259,7 @@ i=5<5F
                         int nrSchimbat = nrDeOrdonat[i];//99
                         nrDeOrdonat[i]= nrDeOrdonat[i + 1];// 99 devine 55
                         nrDeOrdonat[i + 1]= nrSchimbat;//55 ia valoarea 99 
-                        numereNeordonate = 1;//
+                        numereNeordonate = 1;
                     }
                 }
             } while (numereNeordonate == 1);
@@ -291,6 +291,19 @@ i=5<5F
                 }
             }
             return false;
+        }
+        
+        public static void binarySearch508(int[] vectorX, int [] vectorY)
+        {
+            for(int i = 0; i<vectorY.Length; i++)
+            if(binarySearch2(vectorX, vectorY[i]) == true)
+                {
+                    Console.Write("1 ");
+                }
+                else
+                {
+                    Console.Write("0 ");
+                }
         }
     }
 }
