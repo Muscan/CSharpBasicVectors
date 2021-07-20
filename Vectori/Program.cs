@@ -12,10 +12,10 @@ namespace Vectori
 
 
             //afisare(v);
-            //v = stergere(v, 2);
+            v = stergere(v, 2);
             //stergere(v, 0);
             //v = inserare(v,6 , 10);
-            //afisare(v);
+            afisare(v);
             //bubbleSort2(v);
             //Console.WriteLine(binarySearch2(v,55));
             int[] vectorX = { 1,2,3 };

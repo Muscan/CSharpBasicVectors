@@ -205,12 +205,12 @@ i=5<5F
         }
         public static int[] stergere(int[] v, int pozitia)
         {
-            for (int i = 0; i < v.Length - 1; i++)
+            for (int i = pozitia; i < v.Length - 1; i++)
             {
                 v[i] = v[i + 1];
             }
 
-
+            //pastram sirul intr-un sir nou
             int[] nou = new int[v.Length - 1];
 
 
@@ -306,5 +306,12 @@ i=5<5F
                     Console.Write(0 + " ");
                 }
         }
+
+        /* TBD public static int[] StergereNumere1452(int [] numerele, int pozitiaPeIndex)
+        {
+
+            return numerele;
+        }*/
+        
     }
 }
